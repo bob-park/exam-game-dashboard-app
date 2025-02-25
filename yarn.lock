@@ -388,6 +388,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:*":
+  version: 22.13.5
+  resolution: "@types/node@npm:22.13.5"
+  dependencies:
+    undici-types: "npm:~6.20.0"
+  checksum: 10c0/a2e7ed7bb0690e439004779baedeb05159c5cc41ef6d81c7a6ebea5303fde4033669e1c0e41ff7453b45fd2fea8dbd55fddfcd052950c7fcae3167c970bca725
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^20.11.5":
   version: 20.17.19
   resolution: "@types/node@npm:20.17.19"
@@ -420,6 +429,47 @@ __metadata:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/8fb2b00672072135d0858dc9db07873ea107cc238b6228aaa2a9afd1ef7a64a7074078250db38afbeb19064be8ea6af5eac32d404efdd5f45e093cc4829d87f8
+  languageName: node
+  linkType: hard
+
+"@types/rsocket-core@npm:*, @types/rsocket-core@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@types/rsocket-core@npm:0.0.11"
+  dependencies:
+    "@types/node": "npm:*"
+    "@types/rsocket-flowable": "npm:*"
+    "@types/rsocket-types": "npm:*"
+  checksum: 10c0/86ffbfeec4f2c936a876f14f3371f48c52ade4eec0c86a6f05238181dce66d5657c43e83ff42939e1174b5c828f6c7025b2107fe16254000f0a3853743247049
+  languageName: node
+  linkType: hard
+
+"@types/rsocket-flowable@npm:*":
+  version: 0.0.8
+  resolution: "@types/rsocket-flowable@npm:0.0.8"
+  dependencies:
+    "@types/rsocket-types": "npm:*"
+  checksum: 10c0/49b1c6b30f5840f0379268f0aac801222046b39b5f86c61abf40eda5a435bc019cf4f2dd4c5cd0d7cd5ba1118cc1cd909b477b58815b7bb135391d49fa23d9b3
+  languageName: node
+  linkType: hard
+
+"@types/rsocket-types@npm:*":
+  version: 0.0.6
+  resolution: "@types/rsocket-types@npm:0.0.6"
+  dependencies:
+    "@types/node": "npm:*"
+    "@types/rsocket-flowable": "npm:*"
+  checksum: 10c0/6adf296fdb6a23c006c59793e850dca2ff35a1348fc960818669f9ababd5ee63d767d0e12e451cd578ef8051565ee7454d93cf194e86e030d82fa7bb74adb698
+  languageName: node
+  linkType: hard
+
+"@types/rsocket-websocket-client@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "@types/rsocket-websocket-client@npm:0.0.7"
+  dependencies:
+    "@types/rsocket-core": "npm:*"
+    "@types/rsocket-flowable": "npm:*"
+    "@types/rsocket-types": "npm:*"
+  checksum: 10c0/f61da725727058a277585b4e2e374b1ee7ea4766d7902cbb9b683a7fe3d37aa1dae9b9fccba7416feedb728870a0f1cf42b9418440b9a2218b7201aea0e689c5
   languageName: node
   linkType: hard
 
@@ -519,6 +569,8 @@ __metadata:
     "@types/node": "npm:^20.11.5"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
+    "@types/rsocket-core": "npm:^0.0.11"
+    "@types/rsocket-websocket-client": "npm:^0.0.7"
     classnames: "npm:^2.5.1"
     dayjs: "npm:^1.11.11"
     eslint-config-enact-proxy: "npm:^1.0.7"
@@ -529,6 +581,8 @@ __metadata:
     prop-types: "npm:^15.8.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    rsocket-core: "npm:^0.0.29-alpha.0"
+    rsocket-websocket-client: "npm:^0.0.29-alpha.0"
     typescript: "npm:^5.3.3"
     web-vitals: "npm:^3.5.1"
   languageName: unknown
@@ -825,6 +879,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rsocket-core@npm:^0.0.29-alpha.0":
+  version: 0.0.29-alpha.0
+  resolution: "rsocket-core@npm:0.0.29-alpha.0"
+  dependencies:
+    rsocket-flowable: "npm:^0.0.29-alpha.0"
+    rsocket-types: "npm:^0.0.29-alpha.0"
+  checksum: 10c0/210e04f7da3c38ba3d3e79765285fd044b80ff9537d0022e0175d9bba224cfabd37fc51ca850cffa23c3449ace670267c0f37a5bc0c686322f8caa8c0f127c87
+  languageName: node
+  linkType: hard
+
+"rsocket-flowable@npm:^0.0.29-alpha.0":
+  version: 0.0.29-alpha.0
+  resolution: "rsocket-flowable@npm:0.0.29-alpha.0"
+  checksum: 10c0/e08dd2bc1ed6063a43562441ee969f650d7e6b768cddcea58c9f8e460b6b23cd744f65ded0bad7804d902f21c1c2d63f4db362519719b50bbed0d0cab5073136
+  languageName: node
+  linkType: hard
+
+"rsocket-types@npm:^0.0.29-alpha.0":
+  version: 0.0.29-alpha.0
+  resolution: "rsocket-types@npm:0.0.29-alpha.0"
+  dependencies:
+    rsocket-flowable: "npm:^0.0.29-alpha.0"
+  checksum: 10c0/56ff941a1b5c9e840ad7855f2c2c8d24587cb9bdddec5613a56f23f76e5b32052fb05069e2214ae8f7c7bac7e1c84b759be8454bc019d50bbce37f186769fd14
+  languageName: node
+  linkType: hard
+
+"rsocket-websocket-client@npm:^0.0.29-alpha.0":
+  version: 0.0.29-alpha.0
+  resolution: "rsocket-websocket-client@npm:0.0.29-alpha.0"
+  dependencies:
+    rsocket-core: "npm:^0.0.29-alpha.0"
+    rsocket-flowable: "npm:^0.0.29-alpha.0"
+    rsocket-types: "npm:^0.0.29-alpha.0"
+  checksum: 10c0/525aa5b0a6363ec01ed339748b7ac09a780894c8240c80e3651aebca2828e4497822770dbb4a47ea252b7296ca0a6a863e3c18f604296ec123672dbf1790b5fb
+  languageName: node
+  linkType: hard
+
 "scheduler@npm:^0.23.2":
   version: 0.23.2
   resolution: "scheduler@npm:0.23.2"
@@ -898,6 +989,13 @@ __metadata:
   version: 6.19.8
   resolution: "undici-types@npm:6.19.8"
   checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
   languageName: node
   linkType: hard
 

@@ -51,6 +51,8 @@
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"rsocket-core": "^0.0.29-alpha.0",
+		"rsocket-websocket-client": "^0.0.29-alpha.0",
 		"typescript": "^5.3.3",
 		"web-vitals": "^3.5.1"
 	},
@@ -58,6 +60,8 @@
 		"@bob-park/prettier-config-bobpark": "0.1.0-RC1-2024-0212",
 		"@tanstack/react-query-devtools": "^5.66.9",
 		"@types/lodash": "^4.17.7",
+		"@types/rsocket-core": "^0.0.11",
+		"@types/rsocket-websocket-client": "^0.0.7",
 		"eslint-config-enact-proxy": "^1.0.7"
 	},
 	"prettier": "@bob-park/prettier-config-bobpark",
