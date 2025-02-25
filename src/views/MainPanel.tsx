@@ -1,14 +1,14 @@
 import kind from '@enact/core/kind';
-import Button from '@enact/sandstone/Button';
-import { Header, Panel } from '@enact/sandstone/Panels';
+import { Panel } from '@enact/sandstone/Panels';
+
+import GameDashboardContents from '../domain/game/components/GameDashboardContents';
 
 const MainPanel = kind({
   name: 'MainPanel',
 
   render: (props) => (
     <Panel {...props}>
-      <Header title="Hello world!" />
-      <Button>Click me</Button>
+      <GameDashboardContents />
     </Panel>
   ),
 });
