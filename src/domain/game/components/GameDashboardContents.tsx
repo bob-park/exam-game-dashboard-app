@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 
+import Spinner from '@enact/sandstone/Spinner';
+import { Howl, Howler } from 'howler';
+
 import useRSocket from '../../../shared/hooks/useRSocket';
 import { toTimeCodeMin } from '../../../utils/timeUtils';
 
@@ -18,7 +21,15 @@ interface GameTimeData {
   seconds: number;
 }
 
+Howler.autoUnlock = true;
+
+const sound = new Howl({
+  src: 'http://192.168.0.249:10000/sound.mp3',
+});
+
 export default function GameDashboardContents() {
+  // ref
+
   // state
   const [dashborad, setDashboard] = useState<GameDashboard>();
   const [stopWatch, setStopWatch] = useState<StopWatchData>();
@@ -47,6 +58,8 @@ export default function GameDashboardContents() {
     }
 
     let intervalId = null;
+
+    sound.play();
 
     setCurrentSeconds(stopWatch?.seconds || 24);
 
@@ -148,13 +161,9 @@ export default function GameDashboardContents() {
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', marginTop: '100px' }}
           >
             <div className="" style={{ flex: '1', textAlign: 'center', fontSize: '120px' }}>
-              {currentSeconds > 0 ? (
-                <span className="" style={{ color: currentSeconds < 10 ? 'red' : '' }}>
-                  {toTimeCodeMin(currentSeconds)}
-                </span>
-              ) : (
-                <span style={{ color: 'red' }}>Turn Over!!!</span>
-              )}
+              <span className="" style={{ color: currentSeconds < 10 ? 'red' : '' }}>
+                {toTimeCodeMin(currentSeconds)}
+              </span>
             </div>
           </div>
         </>
@@ -163,9 +172,7 @@ export default function GameDashboardContents() {
           className=""
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}
         >
-          <p className="" style={{ flex: '1', textAlign: 'center' }}>
-            대기중...
-          </p>
+          <Spinner component="대기중">대기중</Spinner>
         </div>
       )}
     </div>

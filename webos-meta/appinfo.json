@@ -1,12 +1,22 @@
 {
-	"id": "exam-game-dashboard-app",
-	"version": "1.0.0",
-	"vendor": "LGE-SVL",
-	"type": "web",
-	"main": "index.html",
-	"title": "Game Dashboard",
-	"icon": "icon.png",
-	"miniicon": "icon.png",
-	"largeIcon": "icon.png",
-	"uiRevision": 2
+  "id": "org.bobpark.app.exam-game-dashboard",
+  "version": "1.0.0",
+  "vendor": "LGE-SVL",
+  "type": "web",
+  "main": "index.html",
+  "title": "Game Dashboard",
+  "icon": "icon.png",
+  "miniicon": "icon.png",
+  "largeIcon": "icon.png",
+  "uiRevision": 2,
+  "handlesRelaunch": false,
+  "closeOnRotation": false,
+  "disableBackHistoryAPI": false,
+  "requiredMemory": 20,
+  "virtualTouch": {
+    "verticalThreshold": 20,
+    "horizontalThreshold": 50,
+    "positionEventOnPress": true,
+    "shortTouchThreshold": 30
+  }
 }

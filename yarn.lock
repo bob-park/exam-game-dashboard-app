@@ -381,6 +381,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/howler@npm:*, @types/howler@npm:^2":
+  version: 2.2.12
+  resolution: "@types/howler@npm:2.2.12"
+  checksum: 10c0/fb30e8c137ec03aa6a1e739be11b9d5b973f5f19d9f8a92eb11cff466170c9b5a314d73b8b34bb9a435e309ae880ba4847dee1029ec37d08c3f64b2219add462
+  languageName: node
+  linkType: hard
+
 "@types/lodash@npm:^4.17.7":
   version: 4.17.15
   resolution: "@types/lodash@npm:4.17.15"
@@ -419,6 +426,25 @@ __metadata:
   peerDependencies:
     "@types/react": ^18.0.0
   checksum: 10c0/b163d35a6b32a79f5782574a7aeb12a31a647e248792bf437e6d596e2676961c394c5e3c6e91d1ce44ae90441dbaf93158efb4f051c0d61e2612f1cb04ce4faa
+  languageName: node
+  linkType: hard
+
+"@types/react-howler@npm:^5":
+  version: 5.2.3
+  resolution: "@types/react-howler@npm:5.2.3"
+  dependencies:
+    "@types/howler": "npm:*"
+    "@types/react": "npm:*"
+  checksum: 10c0/8c5ddded6784ff0d77e0d7286ff84b4f7f9a25fdbb857a47f58570f24654b34d8eb52492b0629d30e64cf0d7eb539cf1ac7030b9da231812fe630ec94dd874d7
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
+  version: 19.0.10
+  resolution: "@types/react@npm:19.0.10"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/41884cca21850c8b2d6578b172ca0ca4fff6021251a68532b19f2031ac23dc5a9222470208065f8d9985d367376047df2f49ece8d927f7d04cdc94922b1eb34b
   languageName: node
   linkType: hard
 
@@ -565,15 +591,18 @@ __metadata:
     "@tanstack/react-query": "npm:^5.40.0"
     "@tanstack/react-query-devtools": "npm:^5.66.9"
     "@types/classnames": "npm:^2.3.1"
+    "@types/howler": "npm:^2"
     "@types/lodash": "npm:^4.17.7"
     "@types/node": "npm:^20.11.5"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
+    "@types/react-howler": "npm:^5"
     "@types/rsocket-core": "npm:^0.0.11"
     "@types/rsocket-websocket-client": "npm:^0.0.7"
     classnames: "npm:^2.5.1"
     dayjs: "npm:^1.11.11"
     eslint-config-enact-proxy: "npm:^1.0.7"
+    howler: "npm:^2.2.4"
     ilib: "npm:ilib-webos@^14.19.0-webos1"
     immer: "npm:^10.1.1"
     ky: "npm:^1.7.1"
@@ -610,6 +639,13 @@ __metadata:
   version: 11.12.0
   resolution: "globals@npm:11.12.0"
   checksum: 10c0/758f9f258e7b19226bd8d4af5d3b0dcf7038780fb23d82e6f98932c44e239f884847f1766e8fa9cc5635ccb3204f7fa7314d4408dd4002a5e8ea827b4018f0a1
+  languageName: node
+  linkType: hard
+
+"howler@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "howler@npm:2.2.4"
+  checksum: 10c0/74a295f56fd9b2abce122b27ed12c33fa195fb8a76832803e92d8e462a1eca803b55f44c14db052211d0cfab85c7c5249664c68d95bbbc16c775fac73866c6ef
   languageName: node
   linkType: hard
 
