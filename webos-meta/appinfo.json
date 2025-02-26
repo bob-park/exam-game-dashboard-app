@@ -6,7 +6,7 @@
 	"main": "index.html",
 	"title": "Game Dashboard",
 	"icon": "icon.png",
-	"miniicon": "icon-mini.png",
-	"largeIcon": "icon-large.png",
+	"miniicon": "icon.png",
+	"largeIcon": "icon.png",
 	"uiRevision": 2
 }
