@@ -44,6 +44,8 @@ next-env.d.ts
 ### project ###
 *.DS_Store
 docker-compose*dev.yml
+*.ipk
+/dist
 
 ### history ###
 .history
@@ -53,3 +55,5 @@ docker-compose*dev.yml
 *.iws
 *.iml
 *.ipr
+
+

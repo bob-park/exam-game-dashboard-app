@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import useRSocket from '../../../shared/hooks/useRSocket';
 
-const wsHost = 'ws://localhost:10001';
+const wsHost = 'ws://192.168.10.91:10001';
 const RSOCKET_CONNECT = 'connect';
 
 export default function GameDashboardContents() {
