@@ -52,7 +52,7 @@ function createClient({ host, payloadData, connectMapping, receiver }: CreateCli
 
 export default function useRSocket(
   { host, payloadData, connectMapping }: UseRSocketOptions,
-  onReceive?: (data: object) => void,
+  onReceive?: (data?: object) => void,
 ) {
   // state
   const [socket, setSocket] = useState<ReactiveSocket<object, Encodable>>();
@@ -90,10 +90,6 @@ export default function useRSocket(
   }, [socket]);
 
   useEffect(() => {
-    if (!message) {
-      return;
-    }
-
     onReceive && onReceive(message);
   }, [message]);
 
