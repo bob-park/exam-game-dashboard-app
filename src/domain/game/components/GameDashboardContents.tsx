@@ -6,7 +6,7 @@ import { Howl, Howler } from 'howler';
 import useRSocket from '../../../shared/hooks/useRSocket';
 import { toTimeCodeMin } from '../../../utils/timeUtils';
 
-const wsHost = 'ws://192.168.0.249:10001';
+const wsHost = 'ws://192.168.10.91:10001';
 const RSOCKET_CONNECT = 'connect';
 const RSOCKET_STOPWATCH_CONNECT = 'stopWatch.connect';
 const RSOCKET_GAME_TIME_CONNECT = 'gameTime.connect';
@@ -24,7 +24,7 @@ interface GameTimeData {
 Howler.autoUnlock = true;
 
 const sound = new Howl({
-  src: 'http://192.168.0.249:10000/sound.mp3',
+  src: 'http://192.168.10.91:10000/sound.mp3',
 });
 
 export default function GameDashboardContents() {
